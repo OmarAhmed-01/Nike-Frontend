@@ -1,0 +1,132 @@
+.popular-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 40px;
+}
+.popular-container .popular-title{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.popular-container .popular-title-title{
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.popular-container .popular-title-title h1{
+    font-family: "Poppins", sans-serif;
+    font-size: 27px;
+    font-weight: 500;
+    padding-left: 3%;
+}
+.popular-container .popular-title .popular-arrows {
+    display: flex;
+    flex-direction: row;
+    width: 20%;
+    gap: 10px;
+    padding-left: 130px;
+    padding-top: 10px;
+}
+.arrow-left{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(226, 226, 226);
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.arrow-left:hover{
+    background-color: rgb(195, 195, 195);
+    transition: all 0.3s;
+}
+.arrow-right{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(226, 226, 226);
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.arrow-right:hover{
+    background-color: rgb(195, 195, 195);
+    transition: all 0.3s;
+}
+.popular-container .popular-title .popular-arrows img{
+    width: 20px;
+    height: 20px;
+}
+.popular-cards{
+    padding: 20px 2.5%;
+    display: flex;
+    gap: 10px;
+    overflow-x: scroll;
+}
+.popular-cards::-webkit-scrollbar {
+    height: 10px;
+}
+.popular-cards::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+.popular-cards::-webkit-scrollbar-thumb {
+    background: #888;
+}
+.popular-cards .popular-list-item{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    width: 30%;
+    height: 50%;
+}
+.popular-cards .popular-list-item h1{
+    font-family: "Poppins";
+    font-weight: 600;
+    font-size: 18px;
+}
+.popular-cards .popular-list-item h2{
+    font-family: "Poppins";
+    font-weight: 500;
+    font-size: 16px;
+    color: #888;
+}
+.popular-cards .popular-list-item p{
+    font-size: 16px;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+}
+
+@media (max-width: 900px) {
+    .popular-container .popular-title .popular-title-title{
+        padding: 0px 10px;
+        width: 60%;
+        display: flex;
+        align-items: center;
+    }
+    .popular-container .popular-title .popular-title-title h1{
+        font-size: 20px;
+        font-weight: 400;
+        width: 100%;
+    }
+    .popular-container .popular-title{
+        margin-bottom: 10px;
+    }
+    .popular-container .popular-title .popular-arrows{
+        padding: 0px 10px;
+    }
+    .popular-container .popular-cards .popular-list-item{
+        width: 50%;
+    }
+    .popular-container .popular-cards{
+        padding: 0px 10px;
+    }
+
+}
+
+
